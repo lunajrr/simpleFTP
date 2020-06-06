@@ -4,11 +4,11 @@ a simple file transfer protocol
 # Server
   Run the server code first. It sets up a socket to recieve connections. Once a connection is accepted, the server waits for       inputs such as Upload, help, download, etc. The sever then processes the command and does the respective methods.
   
-#Client
+# Client
   The client code creates a socket to attempt to connect to the server. Then the client then issues a command and checks to see if the command is valid. If the command is valid, the command is then issued to the server. The server then responds and the cycle continues.
   
   
-#Commands
+# Commands
 
   -HELP: Help is sent to the server from the client through the socket. The Server then processes the help command and sends back the list of valid commands. The Client then outputs the data recieved.
   
